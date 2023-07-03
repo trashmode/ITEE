@@ -17,15 +17,10 @@
     </head>
 <body>
 
-    <div class="container bg-dark text-white gx-4 px-4 py-4 mt-3 rounded">
-        <img src="https://go.dolby.io/hubfs/raw_assets/public/Dolby_April2021/images/dolby-io-logo.svg"/>
-        <h1>Getting Started with Video Calls</h1>
-    </div>
-
     <div class="container px-4 mt-4">
         <div class="row justify-content-around mt-3">
             <div class="col-4 shadow p-3 mb-5 bg-body rounded">
-                <h2>Self-View</h2>
+                <h2>Will Cam</h2>
                 <style>
                     #self-view video {                        /* Flip the display of the local user in self view */
                         -webkit-transform: rotateY(180deg);   /* Safari, Chrome */
@@ -38,13 +33,12 @@
                     <i class="display-1 bi bi-person-video position-relative"></i>
                 </div>
 
-                <button type="button" class="btn btn-dark" id="btn-join">Join</button>
                 <button type="button" class="btn btn-dark" id="btn-leave">Leave</button>
                 <button type="button" class="btn btn-dark" id="btn-test">test</button>
             </div>
             
             <div class="col-4 shadow p-3 mb-5 bg-body rounded">
-                <h2>Remote-View</h2>
+                <h2>Emily Cam</h2>
                 <div id="remote-view"> <!-- Container for the remote participant media stream -->
                     <p id="remote-view-username"></p>
                     <i class="display-1 bi bi-person-video position-relative"></i>
@@ -57,7 +51,6 @@
 
     <div class="container px-4 py-4 mt-3">
         <p id="message"></p>
-        <p><a href="https://docs.dolby.io/communications-apis/docs/getting-started-with-the-javascript-sdk">Explore More Tutorials</a></p>
     </div>
 
     <!-- Prompt user for token and alias if not provided in URL -->
