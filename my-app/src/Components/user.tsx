@@ -1,4 +1,4 @@
-class user {
+export class User {
     id: string;
     admin: boolean;
     constructor(id: string, admin: boolean) {
