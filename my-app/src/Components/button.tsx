@@ -1,6 +1,5 @@
 import React from "react";
 import crossword from "./cross.png"
-import test from "./testpage"
 
 
 
@@ -11,7 +10,7 @@ const Button = () => {
     };
 
     return(
-        <a href= "./testpage">
+        <a href= "https://youtube.com.au">
             <div style= {{backgroundColor: "lightblue"}}>
 
             <img src={crossword} />
