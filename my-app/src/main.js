@@ -8,7 +8,8 @@ const shareMessage = (message) => {
  */
 const initializeToken = () => {
     console.group("Step 1: Initialize the SDK");
-    const token = dolbyio.getAccessToken();
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY4ODM1NTMwNCwic3ViIjoiN3VwSkpSNmhhcmIyZl9BSUhjYzNkdz09IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DVVNUT01FUiJdLCJ0YXJnZXQiOiJzZXNzaW9uIiwib2lkIjoiMjk2YWRlOWMtMDMxNi00OGY1LTk1MmYtMDY1NTE0YTJlMDlmIiwiYWlkIjoiODk5MWVhMjEtODQ1OC00NjczLWE2ZDYtOGQwNTZjMjZhODU3IiwiYmlkIjoiOGEzNjk1OTg4OTAxN2JiYzAxODkwNWFiMjk2ZDIwZjAiLCJleHAiOjE2ODg0NDE3MDR9.QUyiBsRiXqY7CtVIUhDh5w00BKpDhTOZnVRO3Fbng5e7Cse6fIUvf7RPfZsrO_4FiYIIBespXy1jWT-ZqpOcqA';
+    // console.log(token)
     VoxeetSDK.initializeToken(token, () => new Promise((resolve) => resolve(token)));
     shareMessage("Step 1: Web SDK initialized.");
     console.groupEnd();
@@ -178,7 +179,7 @@ const main = async () => {
 
     // Establish Real-time Communications by first initializing the Dolby.io Web SDK with credentials
     const token = await initializeToken();
-
+    const refreshToken = async() => token;
     // Start a new session and connect to the Dolby.io platform establishing a client-server link
     await openSession(name);
 
