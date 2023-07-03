@@ -1,7 +1,7 @@
 import type { User } from "./user";
 import type { Session } from "./sessions";
 import type { Room } from "./room";
-class database {
+export class database {
     private user: Map<String, User>;
     private room: Map<String, Room>;
     constructor() {
@@ -23,5 +23,9 @@ class database {
 
     getRoom(id: String) {
         return this.room.get(id);
+    }
+
+    getUserID() {
+        return this.user.size + 1;
     }
 }

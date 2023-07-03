@@ -1,3 +1,4 @@
+import { database } from "./database";
 export class User {
     id: string;
     admin: boolean;
@@ -5,5 +6,4 @@ export class User {
         this.id = id;
         this.admin = admin;
     }
-
 }
