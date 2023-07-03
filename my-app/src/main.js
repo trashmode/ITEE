@@ -182,14 +182,11 @@ const main = async () => {
     const refreshToken = async() => token;
     // Start a new session and connect to the Dolby.io platform establishing a client-server link
     await openSession(name);
-
     // When user clicks the Join button, start and join a conference for the given alias
-    document.getElementById("btn-join").onclick = async () => {
-        await createAndJoinConference(alias, name);
-    };
-
-    // Define custom behavior for activity that occurs during a video call
+        
+        // Define custom behavior for activity that occurs during a video call
     handleConferenceFlow();
+    await createAndJoinConference(alias, name);
 
     // When user clicks the Invite button, generate a url to join the same conference
     document.getElementById("btn-invite").onclick = () => {
