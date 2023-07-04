@@ -34,6 +34,7 @@ function App() {
       <Header/>
     <Routes>
       <Route path = '/' element = {<Homepage />} />
+      <Route path = '/' element = {<LoadingPage/>}/>
     </Routes>
     </BrowserRouter>
     </div>

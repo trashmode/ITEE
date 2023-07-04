@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Box } from "@mui/material";
 import Button, { ButtonProps } from '@mui/material/Button';
+import LoadingPage from '../Pages/LoadingPage';
+import { useNavigate } from "react-router-dom";
+
+
 interface Prop {
     title: string;
 }
@@ -53,9 +57,14 @@ const StyledContent = styled.div`
 
 
 const Connectbox = (props: Prop) => {
+    const navigate = useNavigate();
+    const loadingLink = () => {
+        navigate("/LoadingPage");
+    }
+
     return (
         <Box>
-            <StyledComponent>
+            <StyledComponent onClick = {loadingLink} >
                 <StyledContent>
                     <h1 style={{
                         margin: 20, cursor: 'pointer', fontSize: '180%', color: '#333', fontFamily: 'Arial,sans-serif', WebkitFontSmoothing: 'antialiased',
