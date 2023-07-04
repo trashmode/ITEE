@@ -1,6 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './dist/main.fefce00d.css.map';
+import CrossButton from './Components/button';
+import crossword from "./Components/cross.png";
+import tictac from "./Components/tictac.jpg";
+import sudoku from "./Components/sudoku.png";
 import LoadingPage from './Pages/LoadingPage';
 import Backcolor from './assets/Backcolor.svg'
 import { styled } from 'styled-components';
@@ -32,11 +36,36 @@ function App() {
     <div className = "App">
       <BrowserRouter>
       <Header/>
+        <div>
+      <div id="card-container" style = {{display: "flex", columnGap:"20px"}}>
+        <div>
+          <CrossButton
+          img= {crossword}
+          gameTitle='Crossword'
+          link="https://www.youtube.com"  />
+        </div>
+        <div>
+          <CrossButton
+          img= {tictac}
+          gameTitle='Tic Tac Toe'
+          link="https://www.youtube.com"
+            />
+        </div>
+        <div>
+          <CrossButton
+          img= {sudoku}
+          gameTitle='Sudoku'
+          link="https://www.youtube.com"
+            />
+        </div>
+      </div>
+     
     <Routes>
       <Route path = '/' element = {<Homepage />} />
     </Routes>
     </BrowserRouter>
     </div>
+    
   );
 }
 
