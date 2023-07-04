@@ -28,6 +28,7 @@ font-family: Montserrat;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+text-align: center;
 `
 
 const LoadingPage = () => {
