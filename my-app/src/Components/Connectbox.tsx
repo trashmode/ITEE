@@ -23,11 +23,7 @@ const StyledComponent = styled.div`
     box-shadow: 3px 5px 2px silver;
     background: linear-gradient(135deg, 'transparent', #e2e2e2);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
-    background: linear-gradient(270deg, #76D4E9 0%, rgba(148, 23, 192, 0.80) 100%);
-=======
     background: #FFF;
->>>>>>> origin/dashboard
     &:hover {
       transform: scale(1.4);
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);

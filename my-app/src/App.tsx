@@ -33,37 +33,17 @@ background-repeat: no-repeat;
 
 function App() {
   return (
-    <div className = "App">
+    <div className="App">
       <BrowserRouter>
-      <Header/>
-      <div id="card-container" style = {{display: "flex", columnGap:"20px"}}>
-        <div>
-          <CrossButton
-          img= {crossword}
-          gameTitle='Crossword'
-          link="https://www.youtube.com"  />
-        </div>
-        <div>
-          <CrossButton
-          img= {tictac}
-          gameTitle='Tic Tac Toe'
-          link="https://www.youtube.com"
-            />
-        </div>
-        <div>
-          <CrossButton
-          img= {sudoku}
-          gameTitle='Sudoku'
-          link="https://www.youtube.com"
-            />
-        </div>
-      </div>
 
-    <Routes>
-      <Route path = '/' element = {<Homepage />} />
-      <Route path = '/' element = {<LoadingPage/>}/>
-    </Routes>
-    </BrowserRouter>
+
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/LoadingPage' element={<LoadingPage />} />
+        </Routes>
+        
+      </BrowserRouter>
+
     </div>
 
   );
