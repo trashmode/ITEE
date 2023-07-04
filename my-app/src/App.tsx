@@ -9,9 +9,11 @@ import LoadingPage from './Pages/LoadingPage';
 import Backcolor from './assets/Backcolor.svg'
 import { styled } from 'styled-components';
 import Connectbox from './Components/Connectbox'
-import Homepage from './Pages/Homepage'
+import Homepage from './Pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header'
+import Header from './Components/Header';
+import Wordle from './Pages/wordle';
+import Room from './Pages/Room';
 
 const backgroundStyled = styled.img`
 backgroundColor: '#c0dfff',
@@ -40,6 +42,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/LoadingPage' element={<LoadingPage />} />
+          <Route path='/wordle' element = {<Wordle/>}/>
+          <Route path='/room' element = {<Room/>}/>
         </Routes>
         
       </BrowserRouter>

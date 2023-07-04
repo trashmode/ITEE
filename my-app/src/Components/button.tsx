@@ -1,11 +1,12 @@
 import React from "react";
 import crossword from "./cross.png"
 import { alignProperty } from "@mui/material/styles/cssUtils";
+import WordlePage from '../Pages/wordle';
+import { Navigate, useNavigate } from "react-router-dom";
 
 type Props = {
     img: string;
     gameTitle: string;
-    link: string;
 }
 
 const Button = (props:Props) => {
@@ -14,10 +15,16 @@ const Button = (props:Props) => {
         padding: "10px",
     };
 
+    const navigate = useNavigate();
+
+    const wordle = () => {
+      navigate("/wordle")
+    }
+  
+
     return(
     
-        <a href= {props.link}>
-            <div id = "card" style= {{backgroundColor: "lightblue", display:"flex", flexDirection:"column", border:"1px solid black", borderRadius:"20px", overflow:"hidden"}}>
+            <div id = "card" onClick={wordle} style= {{backgroundColor: "lightblue", display:"flex", flexDirection:"column", border:"1px solid black", borderRadius:"20px", overflow:"hidden"}}>
                
                     <img src={props.img} style = {{width: "300px", height: "200px"}}/>
 
@@ -27,7 +34,6 @@ const Button = (props:Props) => {
                     </h1>
                 </div>
             </div>
-        </a>
 
     )
 }
