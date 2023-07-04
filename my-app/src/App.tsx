@@ -70,6 +70,7 @@ function App() {
      
     <Routes>
       <Route path = '/' element = {<Homepage />} />
+      <Route path = '/' element = {<LoadingPage/>}/>
     </Routes>
     </BrowserRouter>
 >>>>>>> eba5177a34b0ffe668f8a8cb4101e31965b692b4
