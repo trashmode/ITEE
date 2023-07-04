@@ -4,10 +4,10 @@ import './App.css';
 import LoadingPage from './Pages/LoadingPage';
 import Backcolor from './assets/Backcolor.svg'
 import { styled } from 'styled-components';
-import Connectbox from './components/Connectbox'
-import Homepage from './pages/Homepage'
+import Connectbox from './Components/Connectbox'
+import Homepage from './Pages/Homepage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header'
+import Header from './Components/Header'
 
 const backgroundStyled = styled.img`
 backgroundColor: '#c0dfff',
