@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-<<<<<<< HEAD
 import './dist/main.fefce00d.css.map';
 import CrossButton from './Components/button';
 import crossword from "./Components/cross.png";
@@ -31,14 +30,10 @@ background-repeat: no-repeat;
   background-position: center;
 `;
 
-=======
-import Call from'./Pages/Call';
->>>>>>> 86ceb0cf (update)
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
       <BrowserRouter>
 
 
@@ -49,11 +44,6 @@ function App() {
         
       </BrowserRouter>
 
-=======
-      <header className="App-header">
-      <Call></Call>
-      </header>
->>>>>>> 86ceb0cf (update)
     </div>
 
   );
