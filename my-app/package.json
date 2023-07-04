@@ -52,10 +52,7 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@types/react": "^18.2.14"
-=======
-    "@types/react-helmet": "^6.1.6"
->>>>>>> 4736cad6 (update)
+
   }
 }
