@@ -8,7 +8,7 @@ const shareMessage = (message) => {
  */
 const initializeToken = () => {
     console.group("Step 1: Initialize the SDK");
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY4ODM1NTMwNCwic3ViIjoiN3VwSkpSNmhhcmIyZl9BSUhjYzNkdz09IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DVVNUT01FUiJdLCJ0YXJnZXQiOiJzZXNzaW9uIiwib2lkIjoiMjk2YWRlOWMtMDMxNi00OGY1LTk1MmYtMDY1NTE0YTJlMDlmIiwiYWlkIjoiODk5MWVhMjEtODQ1OC00NjczLWE2ZDYtOGQwNTZjMjZhODU3IiwiYmlkIjoiOGEzNjk1OTg4OTAxN2JiYzAxODkwNWFiMjk2ZDIwZjAiLCJleHAiOjE2ODg0NDE3MDR9.QUyiBsRiXqY7CtVIUhDh5w00BKpDhTOZnVRO3Fbng5e7Cse6fIUvf7RPfZsrO_4FiYIIBespXy1jWT-ZqpOcqA';
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJkb2xieS5pbyIsImlhdCI6MTY4ODQ0MjE0NSwic3ViIjoiN3VwSkpSNmhhcmIyZl9BSUhjYzNkdz09IiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DVVNUT01FUiJdLCJ0YXJnZXQiOiJzZXNzaW9uIiwib2lkIjoiMjk2YWRlOWMtMDMxNi00OGY1LTk1MmYtMDY1NTE0YTJlMDlmIiwiYWlkIjoiODk5MWVhMjEtODQ1OC00NjczLWE2ZDYtOGQwNTZjMjZhODU3IiwiYmlkIjoiOGEzNjk1OTg4OTAxN2JiYzAxODkwNWFiMjk2ZDIwZjAiLCJleHAiOjE2ODg1Mjg1NDV9.K7Xzg5KLMqQtB6BvqH0XcoH5qtN6S8jL_leoGFtt-ATu0m99oNWwLoMQYDctP-0n8SO2iUpp-eO0qlm_eLhVWg';
     // console.log(token)
     VoxeetSDK.initializeToken(token, () => new Promise((resolve) => resolve(token)));
     shareMessage("Step 1: Web SDK initialized.");
