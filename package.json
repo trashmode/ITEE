@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@voxeet/voxeet-web-sdk": "^3.10.0",
+    "react-helmet": "^6.1.0"
+  }
+}
