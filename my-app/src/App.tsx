@@ -36,7 +36,6 @@ function App() {
     <div className = "App">
       <BrowserRouter>
       <Header/>
-        <div>
       <div id="card-container" style = {{display: "flex", columnGap:"20px"}}>
         <div>
           <CrossButton
