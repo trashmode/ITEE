@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LoadingPage from './Pages/LoadingPage';
 import Backcolor from './assets/Backcolor.svg'
 import { styled } from 'styled-components';
 import Connectbox from './components/Connectbox'
