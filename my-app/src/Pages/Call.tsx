@@ -9,11 +9,6 @@ import sudoku from "../Components/sudoku.png";
 import Backcolor from '../assets/Backcolor.svg'
 import wordle from "../Components/wordle.png";
 
-function wordleFrame () {
-  var iframe = $("#forPostyouradd");
-  iframe.attr("src", iframe.data("src")); 
-}
-
 const Call = () => {
   useEffect(()=> {
     const script = document.createElement("script")
@@ -87,14 +82,14 @@ const Call = () => {
     });
 
     // Custom behavior for when there is a media stream updated which happens once an attendee starts sharing video
-    VoxeetSDK.conference.on("streamUpdated", (participant, stream) => {
-        console.log(`Stream Updated for ${participant.id}`);
-        console.log(`  Type: ${stream.type}`);
-        console.log(`  Video Tracks: ${stream.getVideoTracks().length}`);
-        if (stream.type === "Camera" && stream.getVideoTracks().length) {
-            shareVideo(participant, stream);
-        }
-    });
+    // VoxeetSDK.conference.on("streamUpdated", (participant, stream) => {
+    //     console.log(`Stream Updated for ${participant.id}`);
+    //     console.log(`  Type: ${stream.type}`);
+    //     console.log(`  Video Tracks: ${stream.getVideoTracks().length}`);
+    //     if (stream.type === "Camera" && stream.getVideoTracks().length) {
+    //         shareVideo(participant, stream);
+    //     }
+    // });
     // Custom behavior for when the app stops receiving a media stream for remote participants
     VoxeetSDK.conference.on("streamRemoved", (participant, stream) => {
       console.log(`Stream Removed for ${participant.id}`);
@@ -191,13 +186,12 @@ const Call = () => {
         </div>
         <div id='util'></div>
       </div>
-      <div className="content">
+      <div className="content" >
+        
       </div>
-
+<div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
             <div id="card-container" style={{ display: "flex", columnGap: "20px" }}>
-                <div onClick={wordleFrame}>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                 <iframe src="https://wordle-clone-bysubodh.netlify.app/" title="Wordle" style = {{width:"500px", height:"700px"}}></iframe>
                     <CrossButton
                         img={wordle}

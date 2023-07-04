@@ -9,6 +9,8 @@ type Props = {
     gameTitle: string;
 }
 
+
+
 const Button = (props:Props) => {
     const mystyle = {
         color: "black",
