@@ -50,7 +50,15 @@ const StyledContent = styled.div`
 	align-items: flex-start;
 `;
 
-
+const StyledText = styled.text`
+color: #462D8E;
+text-align: center;
+font-size: 4rem;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+`
 
 
 const Connectbox = (props: Prop) => {
@@ -61,14 +69,16 @@ const Connectbox = (props: Prop) => {
 
     return (
         <Box>
-            <StyledComponent onClick = {loadingLink} >
+            <StyledComponent onClick={loadingLink} >
                 <StyledContent>
-                    <h1 style={{
+                    {/* <h1 style={{
                         margin: 20, cursor: 'pointer', fontSize: '180%', color: '#462D8E', fontFamily: 'Arial,sans-serif', WebkitFontSmoothing: 'antialiased',
                         MozOsxFontSmoothing: 'grayscale',
                     }}>
                         {props.title}
-                    </h1>
+                    </h1> */}
+                    <StyledText>Connect
+                        Now</StyledText>
                 </StyledContent>
             </StyledComponent>
         </Box>
