@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@chrisoakman/chessboardjs": "^1.0.0",
-    "@jaredreisinger/react-crossword": "^5.2.0",
-    "react": "^18.2.0"
-  }
-}

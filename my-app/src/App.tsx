@@ -5,6 +5,7 @@ import CrossButton from './Components/button';
 import crossword from "./Components/cross.png";
 import tictac from "./Components/tictac.jpg";
 import sudoku from "./Components/sudoku.png";
+import LoadingPage from './Pages/LoadingPage';
 
 function App() {
   return (
