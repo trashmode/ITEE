@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import Game from './Components/Game';
-
-function App() {
-  return (
-    <div className="App">
-      <Game/>
-=======
 import React from 'react';
 import './App.css';
 import './dist/main.fefce00d.css.map';
@@ -67,15 +58,14 @@ function App() {
             />
         </div>
       </div>
-     
+
     <Routes>
       <Route path = '/' element = {<Homepage />} />
       <Route path = '/' element = {<LoadingPage/>}/>
     </Routes>
     </BrowserRouter>
->>>>>>> eba5177a34b0ffe668f8a8cb4101e31965b692b4
     </div>
-    
+
   );
 }
 
