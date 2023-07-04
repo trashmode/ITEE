@@ -12,6 +12,7 @@ import Connectbox from './Components/Connectbox'
 import Homepage from './Pages/Homepage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header'
+import Call from './Pages/Call'
 
 const backgroundStyled = styled.img`
 backgroundColor: '#c0dfff',
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/LoadingPage' element={<LoadingPage />} />
+          <Route path = '/Call' element = {<Call/>}/>
         </Routes>
         
       </BrowserRouter>

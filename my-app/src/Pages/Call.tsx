@@ -75,14 +75,14 @@ const Call = () => {
     });
 
     // Custom behavior for when there is a media stream updated which happens once an attendee starts sharing video
-    // VoxeetSDK.conference.on("streamUpdated", (participant, stream) => {
-    //     console.log(`Stream Updated for ${participant.id}`);
-    //     console.log(`  Type: ${stream.type}`);
-    //     console.log(`  Video Tracks: ${stream.getVideoTracks().length}`);
-    //     if (stream.type === "Camera" && stream.getVideoTracks().length) {
-    //         shareVideo(participant, stream);
-    //     }
-    // });
+    VoxeetSDK.conference.on("streamUpdated", (participant, stream) => {
+        console.log(`Stream Updated for ${participant.id}`);
+        console.log(`  Type: ${stream.type}`);
+        console.log(`  Video Tracks: ${stream.getVideoTracks().length}`);
+        if (stream.type === "Camera" && stream.getVideoTracks().length) {
+            shareVideo(participant, stream);
+        }
+    });
     // Custom behavior for when the app stops receiving a media stream for remote participants
     VoxeetSDK.conference.on("streamRemoved", (participant, stream) => {
       console.log(`Stream Removed for ${participant.id}`);

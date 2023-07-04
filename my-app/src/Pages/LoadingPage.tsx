@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Box } from "@mui/material";
 import img1 from "../Assets/output-onlinegiftools.gif"
+import useHistory from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const StyledBody = styled.body`
     background: linear-gradient(270deg, #76D4E9 0%, rgba(148, 23, 192, 0.80) 100%);
@@ -28,8 +31,12 @@ line-height: normal;
 `
 
 const LoadingPage = () => {
+    const navigate = useNavigate();
+    const loadingLink = () => {
+        navigate("/Call");
+    }
     return (
-        <StyledBody>
+        <StyledBody onClick = {loadingLink}>
             <StyledText>Waiting for your pal</StyledText>
             <StyledImg src={img1}></StyledImg>
         </StyledBody>
