@@ -2,6 +2,18 @@ import React, { useEffect } from 'react';
 import './Call.css';
 import VoxeetSDK from '@voxeet/voxeet-web-sdk';
 import { Helmet } from 'react-helmet';
+import CrossButton from '../Components/button';
+import crossword from "../Components/cross.png";
+import tictac from "../Components/tictac.jpg";
+import sudoku from "../Components/sudoku.png";
+import Backcolor from '../assets/Backcolor.svg'
+import wordle from "../Components/wordle.png";
+
+function wordleFrame () {
+  var iframe = $("#forPostyouradd");
+  iframe.attr("src", iframe.data("src")); 
+}
+
 const Call = () => {
   useEffect(()=> {
     const script = document.createElement("script")
@@ -160,7 +172,7 @@ const Call = () => {
   })
 
   return (
-    <div id='main'>
+    <div id='main' style={{flexDirection:"column"}}>
       <div className="sidebar">
         <div id='games'></div>
         <div id='video'>
@@ -181,6 +193,31 @@ const Call = () => {
       </div>
       <div className="content">
       </div>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div id="card-container" style={{ display: "flex", columnGap: "20px" }}>
+                <div onClick={wordleFrame}>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <iframe src="https://wordle-clone-bysubodh.netlify.app/" title="Wordle" style = {{width:"500px", height:"700px"}}></iframe>
+                    <CrossButton
+                        img={wordle}
+                        gameTitle='Wordle'/>
+
+                </div>
+                <div>
+                    <CrossButton
+                        img={tictac}
+                        gameTitle='Tic Tac Toe'
+                    />
+                </div>
+                <div>
+                    <CrossButton
+                        img={sudoku}
+                        gameTitle='Sudoku'
+                    />
+                </div>
+            </div>
+        </div>
     </div>
   )
 }

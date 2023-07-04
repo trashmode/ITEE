@@ -17,25 +17,23 @@ const Homepage = () => {
                     <CrossButton
                         img={wordle}
                         gameTitle='Wordle'
-                        link="https://wordle-clone-bysubodh.netlify.app/" />
+                       />
                 </div>
                 <div>
                     <CrossButton
                         img={tictac}
                         gameTitle='Tic Tac Toe'
-                        link="https://www.youtube.com"
+                    
                     />
                 </div>
                 <div>
                     <CrossButton
                         img={sudoku}
                         gameTitle='Sudoku'
-                        link="https://www.youtube.com"
                     />
                 </div>
             </div>
         </div>
-
     )
 }
 
