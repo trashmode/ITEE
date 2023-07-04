@@ -11,7 +11,8 @@ import { styled } from 'styled-components';
 import Connectbox from './Components/Connectbox'
 import Homepage from './Pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header';
+import Header from './Components/Header'
+import Call from './Pages/Call'
 import Wordle from './Pages/wordle';
 import Room from './Pages/Room';
 
@@ -42,6 +43,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/LoadingPage' element={<LoadingPage />} />
+          <Route path = '/Call' element = {<Call/>}/>
           <Route path='/wordle' element = {<Wordle/>}/>
           <Route path='/room' element = {<Room/>}/>
         </Routes>
