@@ -2,6 +2,7 @@ import React from 'react';
 import Connectbox from '../Components/Connectbox'
 import CrossButton from "../Components/button";
 import crossword from "../Components/cross.png";
+import wordle from "../Components/wordle.png";
 import tictac from "../Components/tictac.jpg";
 import sudoku from "../Components/sudoku.png";
 import Backcolor from '../assets/Backcolor.svg'
@@ -14,9 +15,9 @@ const Homepage = () => {
             <div id="card-container" style={{ display: "flex", columnGap: "20px" }}>
                 <div>
                     <CrossButton
-                        img={crossword}
-                        gameTitle='Crossword'
-                        link="https://www.youtube.com" />
+                        img={wordle}
+                        gameTitle='Wordle'
+                        link="https://wordle-clone-bysubodh.netlify.app/" />
                 </div>
                 <div>
                     <CrossButton
