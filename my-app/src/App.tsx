@@ -51,10 +51,7 @@ function App() {
 
 =======
       <header className="App-header">
-        <div>
-          Hello
-        </div>
-        <Call></Call>
+      <Call></Call>
       </header>
 >>>>>>> 86ceb0cf (update)
     </div>
